@@ -1,5 +1,4 @@
 Summary:	A tiny web framework
-Summary(pl):	Platforma WWW dla stron i aplikacji
 Name:		ruby-camping
 Version:	1.4.2
 Release:	1
@@ -7,7 +6,7 @@ License:	Ruby's
 Group:		Development/Languages
 Source0:	http://rubyforge.org/frs/download.php/10577/camping-%{version}.tar.gz
 # Source0-md5:	57afd02521457c51e0244eca7f8f8228
-Patch0:	%{name}-nogems.patch
+Patch0:		%{name}-nogems.patch
 URL:		http://code.whytheluckystiff.net/camping/
 BuildRequires:	rake
 BuildRequires:	rpmbuild(macros) >= 1.277
@@ -16,7 +15,7 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Camping is a tiny web framework, less than 4k, basically a Rails microcosm. Wiki and bugs at http://code.whytheluckystiff.net/camping/
+Camping is a tiny web framework, less than 4k, basically a Rails microcosm.
 
 %prep
 %setup -q -n camping-%{version}
