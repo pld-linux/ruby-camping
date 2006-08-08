@@ -11,8 +11,9 @@ URL:		http://code.whytheluckystiff.net/camping/
 BuildRequires:	rake
 BuildRequires:	rpmbuild(macros) >= 1.277
 BuildRequires:	setup.rb = 3.3.1
-Requires: ruby-metaid
-Requires: ruby-markaby
+Requires:	ruby-ActiveRecord >= 1.14.0
+Requires:	ruby-markaby
+Requires:	ruby-metaid
 #BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
