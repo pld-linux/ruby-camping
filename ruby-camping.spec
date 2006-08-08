@@ -7,6 +7,7 @@ License:	Ruby's
 Group:		Development/Languages
 Source0:	http://rubyforge.org/frs/download.php/10577/camping-%{version}.tar.gz
 # Source0-md5:	57afd02521457c51e0244eca7f8f8228
+Patch0:	%{name}-nogems.patch
 URL:		http://code.whytheluckystiff.net/camping/
 BuildRequires:	rake
 BuildRequires:	rpmbuild(macros) >= 1.277
@@ -19,6 +20,7 @@ Camping is a tiny web framework, less than 4k, basically a Rails microcosm. Wiki
 
 %prep
 %setup -q -n camping-%{version}
+%patch0 -p1
 cp %{_datadir}/setup.rb .
 
 %build
@@ -28,6 +30,7 @@ ruby setup.rb config \
 
 ruby setup.rb setup
 
+# rdoc crashes on _why's craaazy code.
 #rdoc --op rdoc lib
 #rdoc --ri --op ri lib
 
@@ -46,6 +49,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 #%doc rdoc
+%doc examples
 %attr(755,root,root) %{_bindir}/*
 %{ruby_rubylibdir}/camping*
 #%{ruby_ridir}/*
