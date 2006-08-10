@@ -1,4 +1,5 @@
 Summary:	A tiny web framework
+Summary(pl):	Ma³y szkielet aplikacji WWW
 Name:		ruby-camping
 Version:	1.4.2
 Release:	1
@@ -18,7 +19,12 @@ Requires:	ruby-metaid
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Camping is a tiny web framework, less than 4k, basically a Rails microcosm.
+Camping is a tiny web framework, less than 4k, basically a Rails
+microcosm.
+
+%description -l pl
+Camping to ma³y szkielet aplikacji WWW, mniejszy ni¿ 4k, zasadniczo
+okrojony Rails.
 
 %prep
 %setup -q -n camping-%{version}
