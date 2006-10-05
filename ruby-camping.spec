@@ -1,18 +1,17 @@
 Summary:	A tiny web framework
 Summary(pl):	Ma³y szkielet aplikacji WWW
 Name:		ruby-camping
-Version:	1.4.2
+Version:	1.5
 Release:	1
 License:	Ruby's
 Group:		Development/Languages
-Source0:	http://rubyforge.org/frs/download.php/10577/camping-%{version}.tar.gz
-# Source0-md5:	57afd02521457c51e0244eca7f8f8228
-Patch0:		%{name}-nogems.patch
+Source0:	http://rubyforge.org/frs/download.php/13596/camping-%{version}.tar.gz
+# Source0-md5:	883ac455a6e214d8205e5834bf3f1baa
+#Patch0:		%{name}-nogems.patch
 URL:		http://code.whytheluckystiff.net/camping/
 BuildRequires:	rake
 BuildRequires:	rpmbuild(macros) >= 1.277
 BuildRequires:	setup.rb = 3.3.1
-Requires:	ruby-ActiveRecord >= 1.14.0
 Requires:	ruby-markaby
 Requires:	ruby-metaid
 #BuildArch:	noarch
@@ -28,7 +27,7 @@ okrojony Rails.
 
 %prep
 %setup -q -n camping-%{version}
-%patch0 -p1
+#%patch0 -p1
 cp %{_datadir}/setup.rb .
 
 %build
