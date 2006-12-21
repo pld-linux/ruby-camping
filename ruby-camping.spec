@@ -7,6 +7,7 @@ License:	Ruby's
 Group:		Development/Languages
 Source0:	http://rubyforge.org/frs/download.php/13596/camping-%{version}.tar.gz
 # Source0-md5:	883ac455a6e214d8205e5834bf3f1baa
+Patch0:	camping-fastcgi-fix.patch
 URL:		http://code.whytheluckystiff.net/camping/
 BuildRequires:	rake
 BuildRequires:	rpmbuild(macros) >= 1.277
@@ -26,6 +27,7 @@ okrojony Rails.
 
 %prep
 %setup -q -n camping-%{version}
+%patch0 -p1
 cp %{_datadir}/setup.rb .
 
 %build
