@@ -1,13 +1,12 @@
 Summary:	A tiny web framework
 Summary(pl):	Ma³y szkielet aplikacji WWW
 Name:		ruby-camping
-Version:	1.5
+Version:	1.5.180
 Release:	1
 License:	Ruby's
 Group:		Development/Languages
-Source0:	http://rubyforge.org/frs/download.php/13596/camping-%{version}.tar.gz
-# Source0-md5:	883ac455a6e214d8205e5834bf3f1baa
-Patch0:	camping-fastcgi-fix.patch
+Source0:	http://code.whytheluckystiff.net/gems/camping-1.5.180.gem
+# Source0-md5:	2bc00721072aa11846e3d90a5e5f5383
 URL:		http://code.whytheluckystiff.net/camping/
 BuildRequires:	rake
 BuildRequires:	rpmbuild(macros) >= 1.277
@@ -26,8 +25,8 @@ Camping to ma³y szkielet aplikacji WWW, mniejszy ni¿ 4k, zasadniczo
 okrojony Rails.
 
 %prep
-%setup -q -n camping-%{version}
-%patch0 -p1
+%setup -q -c
+tar xf %{SOURCE0} -O data.tar.gz | tar xzv-
 cp %{_datadir}/setup.rb .
 
 %build
