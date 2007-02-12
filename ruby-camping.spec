@@ -1,5 +1,5 @@
 Summary:	A tiny web framework
-Summary(pl.UTF-8):   Mały szkielet aplikacji WWW
+Summary(pl.UTF-8):	Mały szkielet aplikacji WWW
 Name:		ruby-camping
 Version:	1.5.180
 Release:	1
