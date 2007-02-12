@@ -1,5 +1,5 @@
 Summary:	A tiny web framework
-Summary(pl):	Ma≥y szkielet aplikacji WWW
+Summary(pl.UTF-8):   Ma≈Çy szkielet aplikacji WWW
 Name:		ruby-camping
 Version:	1.5.180
 Release:	1
@@ -20,8 +20,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Camping is a tiny web framework, less than 4k, basically a Rails
 microcosm.
 
-%description -l pl
-Camping to ma≥y szkielet aplikacji WWW, mniejszy niø 4k, zasadniczo
+%description -l pl.UTF-8
+Camping to ma≈Çy szkielet aplikacji WWW, mniejszy ni≈º 4k, zasadniczo
 okrojony Rails.
 
 %prep
