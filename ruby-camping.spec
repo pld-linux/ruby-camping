@@ -13,6 +13,7 @@ BuildRequires:	rpmbuild(macros) >= 1.277
 BuildRequires:	setup.rb = 3.3.1
 Requires:	ruby-markaby
 Requires:	ruby-metaid
+Requires:	ruby-ActiveSupport
 #BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
