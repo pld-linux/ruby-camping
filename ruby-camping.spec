@@ -5,15 +5,14 @@ Version:	1.5.180
 Release:	1
 License:	Ruby's
 Group:		Development/Languages
-Source0:	http://code.whytheluckystiff.net/gems/camping-1.5.180.gem
+Source0:	http://code.whytheluckystiff.net/gems/camping-%{version}.gem
 # Source0-md5:	2bc00721072aa11846e3d90a5e5f5383
 URL:		http://code.whytheluckystiff.net/camping/
-BuildRequires:	rake
 BuildRequires:	rpmbuild(macros) >= 1.277
-BuildRequires:	setup.rb = 3.3.1
+BuildRequires:	setup.rb >= 3.3.1
+Requires:	ruby-ActiveSupport
 Requires:	ruby-markaby
 Requires:	ruby-metaid
-Requires:	ruby-ActiveSupport
 #BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
